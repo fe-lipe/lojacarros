@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+
+
+</h:head>
+
+
+
+
+<h:body>
+                
+<h:form>
+    <h1>ConsultasMedicas</h1>
+   <h:panelGrid columns="2" var="consultas" border="3" cellpadding="6">
+   
+   <h:outputLabel value="NomeDoPaciente"/>
+   <h:inputText  value="#{consultaBean.consultaMedica.nomePaciente}"/>
+   <h:outputLabel value="EspecialidadeMedica"/>
+   <h:inputText value="#{consultaBean.consultaMedica.especialidadeMedica}"/>
+   <h:outputLabel value="NomeDoMedico"/>
+   <h:inputText value="#{consultaBean.consultaMedica.nomeMedico}"/>
+   <h:outputLabel value="Crm"/>
+   <h:inputText value="#{consultaBean.consultaMedica.crm}"/>
+   <h:outputLabel value="Data"/>
+   <h:inputText   value="#{consultaBean.consultaMedica.data}"/>
+   <h:outputLabel value="Hora"/>
+   <h:inputText value="#{consultaBean.consultaMedica.horario}"/>
+   <h:outputLabel value="NumeroConsultorio"/>
+   <h:inputText value="#{consultaBean.consultaMedica.numeroConsultorio}"/>
+  
+   </h:panelGrid>
+    
+    </h:form>
+    
+    
+    <br></br>
+    
+ <h:commandButton value="SalvaConsulta"  action="#{consultaBean.save}" image="resources/img/salva.png" title="salvar"/>
+      <h:commandButton value="DeletarConsulta" action="#{consultaBean.delete}" image="resources/img/delete_.png" />
+	      <h:commandButton value="NovaConsulta" action="#{consultaBean.novo}" image="resources/img/novo.png"/>
+   
+  
+   
+   
+   
+   </h:body>
+
+
+
+
+
+ 
+
+
+
+
+
+</html>
